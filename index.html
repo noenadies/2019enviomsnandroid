@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+
+body{
+
+  background-color: rgb(2, 64, 100)
+}
+
+#idbt{
+
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  height: 170px;
+  width: 20%;
+  background-color: black;
+  color: aliceblue;
+  font-size: 15px;
+  text-align: center;
+
+}
+
+
+		</style>
+	</head>
+	<body>
+	<button onclick="fseinf();" id="idbt">send</button>
+		<script>
+
+      var  vansend=1;
+      var enviarsiono=true;
+     function  fseinf(){
+      setInterval(function(){
+
+if(enviarsiono){
+  showAndroidToast();
+}
+if(vansend>4){enviarsiono=false}
+},600);
+alert(123);
+     }
+
+     function showAndroidToast() {
+        Android.showToast("3229375628","giovanni  "+String(vansend),String(vansend));
+        vansend=vansend+1;
+    }
+
+
+			// Our Javascript will go here.
+		</script>
+	</body>
+</html>
